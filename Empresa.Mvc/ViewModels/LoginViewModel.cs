@@ -1,14 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Empresa.Dominio
+namespace Empresa.Mvc.ViewModels
 {
-    public class Contato
+    public class LoginViewModel
     {
-        public int Id { get; set; }
-
-        [RequiredAttribute]
-        public string Nome { get; set; }
-
         [Required]
         [EmailAddress]
         public string Email { get; set; }
@@ -16,8 +11,5 @@ namespace Empresa.Dominio
         [Required]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
-
-        public string Assunto { get; set; }
-        public string Mensagem { get; set; }
     }
 }
