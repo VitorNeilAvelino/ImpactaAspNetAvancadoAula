@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Loja.Dominio
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -31,13 +33,19 @@
                                new { Area = "Vendas" }, new { })
                             </li>
                             <li class="divider" />
-                            <li>
-                                @Html.ActionLink("Leilões", "Index", "Leiloes",
+
+                            @if (User.IsInRole(Perfil.Comprador.ToString()))
+                            {
+                                <li>
+                                    @Html.ActionLink("Leilões", "Index", "Leiloes",
                                new { Area = "Vendas" }, new { })
-                            </li>
+                                </li>
+                            }
+
                         </ul>
                     </li>
                 </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
