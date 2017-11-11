@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201710281619230_Identity.Designer.cs">
       <DependentUpon>201710281619230_Identity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711111209295_DataNascimentonNula.cs" />
+    <Compile Include="Migrations\201711111209295_DataNascimentonNula.Designer.cs">
+      <DependentUpon>201711111209295_DataNascimentonNula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelConfiguration\CategoriaConfiguration.cs" />
     <Compile Include="ModelConfiguration\ProdutoConfiguration.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710281619230_Identity.resx">
       <DependentUpon>201710281619230_Identity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711111209295_DataNascimentonNula.resx">
+      <DependentUpon>201711111209295_DataNascimentonNula.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
