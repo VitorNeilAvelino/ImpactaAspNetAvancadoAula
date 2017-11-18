@@ -34,13 +34,13 @@
                             </li>
                             <li class="divider" />
 
-                            @if (User.IsInRole(Perfil.Comprador.ToString()))
-                            {
+                            @*@if (User.IsInRole(Perfil.Comprador.ToString()))
+                            {*@
                                 <li>
                                     @Html.ActionLink("Leilões", "Index", "Leiloes",
                                new { Area = "Vendas" }, new { })
                                 </li>
-                            }
+                            @*}*@
 
                         </ul>
                     </li>
